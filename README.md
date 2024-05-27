@@ -243,3 +243,177 @@ shadowDistance = 10 + wiggle(2, 5);
 shadowAngle = time * 360 / 5;
 ```
 
+## 22. Zoom Blur
+### Zoom Blur Effect
+```jsx
+// Apply to Zoom Blur Effect
+startBlur = 0;
+endBlur = 50;
+linear(time, startTime, endTime, startBlur, endBlur);
+```
+
+## 23. Light Sweep
+### Light Sweep Transition
+```jsx
+// Apply to Light Sweep Effect
+startPosition = [0, value[1]];
+endPosition = [thisComp.width, value[1]];
+linear(time, startTime, endTime, startPosition, endPosition);
+```
+
+## 24. Page Turn
+### Page Turn Effect
+```jsx
+// Apply to Page Turn Effect
+startAngle = 0;
+endAngle = 180;
+linear(time, startTime, endTime, startAngle, endAngle);
+```
+
+## 25. Lens Distortion
+### Lens Distortion Transition
+```jsx
+// Apply to Lens Distortion Effect
+startDistortion = 0;
+endDistortion = -100;
+linear(time, startTime, endTime, startDistortion, endDistortion);
+```
+
+## 26. Glow Effect
+### Glow Intensity Transition
+```jsx
+// Apply to Glow Effect
+startGlow = 0;
+endGlow = 100;
+linear(time, startTime, endTime, startGlow, endGlow);
+```
+
+## 27. Radial Wipe
+### Radial Wipe Transition
+```jsx
+// Apply to Radial Wipe Effect
+startTransition = 0;
+endTransition = 100;
+linear(time, startTime, endTime, startTransition, endTransition);
+```
+
+## 28. Swipe Reveal
+### Swipe Reveal with Position
+```jsx
+// Apply to Position
+startPosition = [thisComp.width, value[1]];
+endPosition = [value[0], value[1]];
+linear(time, startTime, endTime, startPosition, endPosition);
+```
+
+## 29. Gaussian Blur
+### Gaussian Blur Transition
+```jsx
+// Apply to Gaussian Blur Effect
+startBlur = 0;
+endBlur = 50;
+linear(time, startTime, endTime, startBlur, endBlur);
+```
+
+## 30. Light Flicker
+### Light Flicker Effect
+```jsx
+// Apply to Opacity
+frequency = 10; // Flicker frequency
+magnitude = 50; // Flicker magnitude
+wiggle(frequency, magnitude);
+```
+
+## 31. Text Flicker
+### Text Flicker Effect
+```jsx
+// Apply to Opacity of Text Layer
+frequency = 15; // Flicker frequency
+magnitude = 100; // Flicker magnitude
+wiggle(frequency, magnitude);
+```
+
+## 32. Twirl Effect
+### Twirl Effect Transition
+```jsx
+// Apply to Twirl Effect
+startAngle = 0;
+endAngle = 360;
+linear(time, startTime, endTime, startAngle, endAngle);
+```
+
+## 33. Color Correction
+### Color Correction Transition
+```jsx
+// Apply to Color Correction Effect (e.g., Exposure)
+startExposure = 0;
+endExposure = 2;
+linear(time, startTime, endTime, startExposure, endExposure);
+```
+
+## 34. Motion Tile
+### Motion Tile Transition
+```jsx
+// Apply to Motion Tile Effect
+startOffset = [0, 0];
+endOffset = [100, 0];
+linear(time, startTime, endTime, startOffset, endOffset);
+```
+
+## 35. Polar Coordinates
+### Polar Coordinates Transition
+```jsx
+// Apply to Polar Coordinates Effect
+startInterpolation = 0;
+endInterpolation = 100;
+linear(time, startTime, endTime, startInterpolation, endInterpolation);
+```
+
+## 36. Saturation Change
+### Saturation Transition
+```jsx
+// Apply to Hue/Saturation Effect
+startSaturation = 0;
+endSaturation = 100;
+linear(time, startTime, endTime, startSaturation, endSaturation);
+```
+
+## 37. Tint Effect
+### Tint Transition
+```jsx
+// Apply to Tint Effect
+startTintAmount = 0;
+endTintAmount = 100;
+linear(time, startTime, endTime, startTintAmount, endTintAmount);
+```
+
+## 38. Wave Warp
+### Wave Warp Transition
+```jsx
+// Apply to Wave Warp Effect
+startWaveHeight = 0;
+endWaveHeight = 50;
+linear(time, startTime, endTime, startWaveHeight, endWaveHeight);
+```
+
+## 39. Echo Effect
+### Echo Transition
+```jsx
+// Apply to Echo Effect
+startNumberOfEchoes = 0;
+endNumberOfEchoes = 10;
+linear(time, startTime, endTime, startNumberOfEchoes, endNumberOfEchoes);
+```
+
+## 40. Corner Pin
+### Corner Pin Transition
+```jsx
+// Apply to Corner Pin Effect
+topLeft = linear(time, startTime, endTime, [0, 0], [100, 100]);
+topRight = linear(time, startTime, endTime, [width, 0], [width - 100, 100]);
+bottomLeft = linear(time, startTime, endTime, [0, height], [100, height - 100]);
+bottomRight = linear(time, startTime, endTime, [width, height], [width - 100, height - 100]);
+```
+
+
+
